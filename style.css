@@ -1,3 +1,4 @@
+/* --- Estilos previos mantenidos --- */
 * {
     margin: 0;
     padding: 0;
@@ -171,7 +172,7 @@ body {
 
 .seccion-habilidades {
     padding: 80px 10%;
-    background-color: var(--color-header); /* Fondo diferente para separar secciones */
+    background-color: var(--color-header);
 }
 
 .seccion-habilidades h2 {
@@ -186,7 +187,6 @@ body {
     align-items: flex-start;
 }
 
-/* Estilos de la Tabla */
 .caja-tabla {
     flex: 1.5;
 }
@@ -223,7 +223,6 @@ tr:hover {
     background-color: #1e293b;
 }
 
-/* Estilos de las Listas */
 .caja-listas {
     flex: 1;
 }
@@ -238,14 +237,88 @@ tr:hover {
     font-size: 1.05rem;
 }
 
-/* Color para viñetas desordenadas */
 .caja-listas ul li {
     list-style-type: square;
     color: var(--color-acento);
 }
 
-/* Estilo para números en lista ordenada */
 .caja-listas ol li {
     font-weight: bold;
     color: var(--color-texto);
+}
+
+.seccion-proyectos {
+    padding: 80px 10%;
+    background-color: var(--color-fondo);
+}
+
+.seccion-proyectos h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo-proyectos {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #a3b3cc;
+}
+
+/* Layout con CSS Grid */
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 30px;
+}
+
+.proyecto-card {
+    background-color: var(--color-header);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #334155;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+    border-color: var(--color-primario);
+}
+
+.img-placeholder {
+    height: 180px;
+    background: linear-gradient(135deg, #1e293b, #334155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--color-primario);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+figcaption {
+    padding: 25px;
+}
+
+figcaption h3 {
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+
+figcaption p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    color: #cbd5e1;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: var(--color-acento);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
 }
