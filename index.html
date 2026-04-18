@@ -44,7 +44,7 @@
                     <h3>Sobre Mí</h3>
                     <p>Mi nombre es <strong>Martín Mondaca</strong> y soy estudiante de desarrollo de software y ciberseguridad en INACAP.</p>
                     <p>Desde que descubrí la programación, me apasiona la Ciberseguridad.</p>
-                    <p>Actualmente me encuentro aprendiendo HTML5, CSS3, Python y bases de datos, con el objetivo de convertirme en un Analista Programador profesional. Me gusta trabajar en equipo y resolver problemas complejos.</p>
+                    <p>Actualmente me encuentro aprendiendo HTML5, CSS3, Python y bases de datos, con el objetivo de convertirme en un Analista Programador profesional.</p>
                     <blockquote>«El único modo de hacer un gran trabajo es amar lo que haces.» - Steve Jobs</blockquote>
                 </article>
                 <aside class="datos-personales">
@@ -67,10 +67,7 @@
                     <h3>Tecnologías y Dominio</h3>
                     <table>
                         <thead>
-                            <tr>
-                                <th>Tecnología</th>
-                                <th>Nivel de Dominio</th>
-                            </tr>
+                            <tr><th>Tecnología</th><th>Nivel de Dominio</th></tr>
                         </thead>
                         <tbody>
                             <tr><td>HTML5 / CSS3</td><td>Intermedio - Alto</td></tr>
@@ -85,14 +82,11 @@
                     <ul>
                         <li>Maquetación web responsiva</li>
                         <li>Análisis de vulnerabilidades</li>
-                        <li>Gestión de bases de datos</li>
-                        <li>Hardware y modding de consolas</li>
                     </ul>
                     <h3>Ruta de Aprendizaje</h3>
                     <ol>
                         <li>Desarrollo Front-End (Actual)</li>
                         <li>Especialización en Redes Seguras</li>
-                        <li>Certificación Internacional en Ciberseguridad</li>
                     </ol>
                 </div>
             </div>
@@ -101,68 +95,101 @@
         <section id="proyectos" class="seccion-proyectos">
             <h2>Proyectos Destacados</h2>
             <p class="subtitulo-proyectos">Explora mis trabajos en desarrollo de software y auditoría de seguridad.</p>
-            
             <div class="grid-proyectos">
                 <figure class="proyecto-card">
                     <div class="img-placeholder">AUDITORÍA</div>
                     <figcaption>
                         <h3>Escáner de Vulnerabilidades</h3>
-                        <p>Script en Python capaz de identificar puertos abiertos y servicios expuestos en redes locales.</p>
+                        <p>Script en Python capaz de identificar puertos abiertos y servicios expuestos.</p>
                         <a href="https://github.com/MartinMondaca19" target="_blank">Ver Repositorio &rarr;</a>
                     </figcaption>
                 </figure>
-
                 <figure class="proyecto-card">
                     <div class="img-placeholder">DATABASE</div>
                     <figcaption>
                         <h3>Sistema de Inventario SQL</h3>
-                        <p>Diseño y gestión de base de datos relacional para control de stock con integridad referencial.</p>
+                        <p>Diseño de base de datos relacional para control de stock con integridad referencial.</p>
                         <a href="https://github.com/MartinMondaca19" target="_blank">Ver Repositorio &rarr;</a>
                     </figcaption>
                 </figure>
-
                 <figure class="proyecto-card">
                     <div class="img-placeholder">CRIPTOGRAFÍA</div>
                     <figcaption>
                         <h3>Cifrador de Mensajes AES</h3>
-                        <p>Aplicación para proteger información sensible mediante algoritmos de cifrado simétrico.</p>
+                        <p>Aplicación para proteger información sensible mediante algoritmos de cifrado.</p>
                         <a href="https://github.com/MartinMondaca19" target="_blank">Ver Repositorio &rarr;</a>
                     </figcaption>
                 </figure>
-
                 <figure class="proyecto-card">
                     <div class="img-placeholder">NETWORKING</div>
                     <figcaption>
                         <h3>Sniffer de Paquetes</h3>
-                        <p>Analizador de tráfico de red para capturar y visualizar tramas en tiempo real con Scapy.</p>
+                        <p>Analizador de tráfico de red para capturar y visualizar tramas en tiempo real.</p>
                         <a href="https://github.com/MartinMondaca19" target="_blank">Ver Repositorio &rarr;</a>
                     </figcaption>
                 </figure>
-
                 <figure class="proyecto-card">
                     <div class="img-placeholder">WEB DEV</div>
                     <figcaption>
                         <h3>Landing Page Segura</h3>
-                        <p>Maquetación web con validación de formularios y principios básicos de seguridad OWASP.</p>
+                        <p>Maquetación web con validación de formularios y principios OWASP.</p>
                         <a href="https://github.com/MartinMondaca19" target="_blank">Ver Repositorio &rarr;</a>
                     </figcaption>
                 </figure>
-
                 <figure class="proyecto-card">
                     <div class="img-placeholder">HARDWARE</div>
                     <figcaption>
                         <h3>Documentación Modding</h3>
-                        <p>Repositorio con guías técnicas sobre modificación y seguridad en hardware retro.</p>
+                        <p>Repositorio con guías técnicas sobre seguridad en hardware retro.</p>
                         <a href="https://github.com/MartinMondaca19" target="_blank">Ver Repositorio &rarr;</a>
                     </figcaption>
                 </figure>
             </div>
         </section>
 
-        <section id="contacto"></section>
+        <section id="contacto" class="seccion-contacto">
+            <h2>Envíame un mensaje</h2>
+            <div class="contenedor-contacto">
+                <form action="#" method="POST" class="formulario-contacto">
+                    <div class="grupo-input">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="proyecto">Nuevo Proyecto</option>
+                            <option value="seguridad">Auditoría de Seguridad</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <div class="grupo-input">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="boton-enviar">Enviar mensaje</button>
+                </form>
+                <div class="info-contacto">
+                    <h3>Información de contacto</h3>
+                    <p>Si prefieres, puedes contactarme directamente a través de mis canales oficiales.</p>
+                    <ul class="lista-contacto">
+                        <li><strong>Email:</strong> martin.mondaca04@inacapmail.cl</li>
+                        <li><strong>Ubicación:</strong> Hualpén, Biobío, Chile</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer-principal">
+        <p>&copy; 2026 Martín Mondaca. Todos los derechos reservados.</p>
+        <p>Estudiante de Analista Programador - INACAP</p>
+    </footer>
 
 </body>
 </html>

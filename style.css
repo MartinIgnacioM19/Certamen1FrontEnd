@@ -264,10 +264,9 @@ tr:hover {
     color: #a3b3cc;
 }
 
-/* Layout con CSS Grid */
 .grid-proyectos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -321,4 +320,96 @@ figcaption a {
 
 figcaption a:hover {
     text-decoration: underline;
+}
+
+.seccion-contacto {
+    padding: 80px 10%;
+    background-color: var(--color-header);
+}
+
+.seccion-contacto h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.contenedor-contacto {
+    display: flex;
+    gap: 60px;
+}
+
+.formulario-contacto {
+    flex: 1.5;
+    background-color: var(--color-fondo);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+}
+
+.grupo-input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--color-primario);
+}
+
+.grupo-input input, 
+.grupo-input select, 
+.grupo-input textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: white;
+    font-family: inherit;
+}
+
+.grupo-input input:focus, 
+.grupo-input select:focus, 
+.grupo-input textarea:focus {
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+}
+
+.boton-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.info-contacto {
+    flex: 1;
+}
+
+.info-contacto h3 {
+    color: var(--color-primario);
+    margin-bottom: 20px;
+}
+
+.lista-contacto {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.lista-contacto li {
+    margin-bottom: 15px;
+}
+
+.footer-principal {
+    background-color: var(--color-fondo);
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid #334155;
+    color: #a3b3cc;
 }
