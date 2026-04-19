@@ -1,4 +1,4 @@
-/* --- Estilos previos mantenidos --- */
+/* --- Estilos previos (1 al 8) se mantienen exactamente igual --- */
 * {
     margin: 0;
     padding: 0;
@@ -412,4 +412,65 @@ figcaption a:hover {
     text-align: center;
     border-top: 1px solid #334155;
     color: #a3b3cc;
+}
+
+/* =========================================
+   9. DISEÑO RESPONSIVO (MOBILE) - COMMIT 6
+   ========================================= */
+@media (max-width: 480px) {
+    /* Header: Apilamos logo y menú */
+    .header-principal {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 0.85rem;
+    }
+
+    /* Hero: Imagen arriba, texto abajo */
+    .hero {
+        flex-direction: column-reverse;
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .hero-texto h1 {
+        font-size: 2rem;
+    }
+
+    .hero-imagen img {
+        width: 180px;
+        height: auto;
+    }
+
+    /* Secciones Generales */
+    .contenedor-perfil, 
+    .contenedor-habilidades, 
+    .contenedor-contacto {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Tabla: Permitir scroll lateral si es muy ancha */
+    .caja-tabla {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    /* Proyectos: Una sola columna en Grid */
+    .grid-proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    /* Formulario: Ocupar todo el ancho */
+    .formulario-contacto {
+        width: 100%;
+    }
 }
